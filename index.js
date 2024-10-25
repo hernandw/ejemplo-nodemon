@@ -11,6 +11,10 @@ app.get('/hello', (req, res) => {
     res.send('Hello World!');
 });
 
+app.get('/hello/:name', (req, res) => {
+    res.send("otra ruta")
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port http://localhost:${PORT}`);
 })
